@@ -1,0 +1,8 @@
+* xclip
+  copy
+  #+BEGIN_SRC sh
+    xclip -sel clip
+  #+END_SRC
+  paste
+** t1
+** t2
