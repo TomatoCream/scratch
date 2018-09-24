@@ -1,8 +1,28 @@
 * xclip
-  copy
+  copy 
   #+BEGIN_SRC sh
     xclip -sel clip
+    pwd | xclip -sel clip
+    ls -la | xclip -sel clip
   #+END_SRC
   paste
+  #+BEGIN_SRC sh
+    xclip -sel clip -t image/png -o > filename.jpg
+  #+END_SRC
 ** t1
 ** t2
+* bash
+** loops
+   #+BEGIN_SRC sh
+     for i in 1 2 3 ... N
+     do
+         $i
+         command
+     done
+
+     for each_file in file1 file2
+     do
+         $each_file
+         command
+     done
+   #+END_SRC
