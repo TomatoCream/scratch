@@ -13,6 +13,7 @@
 ** t2
 * bash
 ** loops
+   for loop
    #+BEGIN_SRC sh
      for i in 1 2 3 ... N
      do
@@ -25,4 +26,14 @@
          $each_file
          command
      done
+   #+END_SRC
+   while loops
+   #+BEGIN_SRC sh
+     while true
+     do
+         xelatex resume.tex & 
+         sleep 10 
+         pkill latex
+     done
+
    #+END_SRC
